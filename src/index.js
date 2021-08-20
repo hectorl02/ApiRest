@@ -1,6 +1,4 @@
-import express from 'express';
+import app from './app';
 
-const app = express();
-
-app.listen(3000);
+app.listen(app.get('port'));
 console.log('servidor en : ', 3000);
